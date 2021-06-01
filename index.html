@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -21,16 +23,21 @@
         <nav class="main-menu">
             <a class="logotipo" href="index.html" target="_blank"><img src="images/logo.jpg" alt="Logotipo"></a>
             <ul class="menu-link-desktop">
-                <li><a class="links-menu" href="">Home</a></li>
-                <li><a class="links-menu" href="">Servicios</a></li>
-                <li><a class="links-menu" href="">Beneficios</a></li>
-                <li><a class="links-menu cta-btn" href="Cotizacion.html" >Cotizar</a></li>
+                <li><a class="links-menu" href="#">Home</a></li>
+                <li><a class="links-menu" href="#sello">Sello</a></li>
+                <li><a class="links-menu" href="#menu">menu</a></li>
+                <li><a class="links-menu" href="#galeria">galeria</a></li>
+                <li><a class="links-menu cta-btn" href="Cotizacion.html" >Pide ya!</a></li>
+                <li><a href="https://www.instagram.com/el_bulldog_gourmet/" class="icon icon-instagram" target="_blank"></a></li>
+
             </ul>
             <ul class="menu-link-mobile">
-                <li><a class="links-menu" href="">Home</a></li>
-                <li><a class="links-menu" href="">Servicios</a></li>
-                <li><a class="links-menu" href="">Beneficios</a></li>
-                <li><a class="links-menu cta-btn" href="Cotizacion.html">Cotizar</a></li>
+                <li><a class="links-menu" href="#">Home</a></li>
+                <li><a class="links-menu" href="#sello">Sello</a></li>
+                <li><a class="links-menu" href="#menu">menu</a></li>
+                <li><a class="links-menu" href="#galeria">galeria</a></li>
+                <li><a class="links-menu cta-btn" href="Cotizacion.html">Pide ya!</a></li>
+                <li><a href="https://www.instagram.com/el_bulldog_gourmet/" class="icon icon-instagram" target="_blank"></a></li>
             </ul>
         </nav>
         <!-- Hero -->
@@ -41,7 +48,7 @@
                 
             </hgroup>
             <figure>
-                <video src="/Proyecto Final/images/Food   24999.mp4" autoplay muted controls width="90%"></video>
+            <video src="/Proyecto Final/images/Food   24999.mp4" autoplay muted controls width="90%" loop></video>
             </figure>
         </section>
     </header>
@@ -49,7 +56,7 @@
     <!-- Contenido -->
     <main>
         <!-- Sello y compromiso -->
-        <section class="section-page section-services">
+        <section class="section-page section-services" id="sello" >
             <h1 class="title-section">Nuestro Sello y Compromiso</h1>
             <div class="container">
                 <article class="box-services">
@@ -71,12 +78,11 @@
             </div>
         </section>
         <!-- Menú -->
-        <section class="section-page section-benefits">
+        <section class="section-page section-benefits" id="menu">
             <div class="container">
                 <h1 class="title-section">Menú</h1>
                 <div class="cont-benefits">
                     <article class="box-benefits">
-                       
                         <div>
                             <h3>Viernes</h3>
                             
@@ -86,7 +92,7 @@
                         </div>
                     </article>
                     <article class="box-benefits">
-                        <figure><img class="icon-benefits" src="images/pescado.png" width="100" height="100" alt=""></figure>
+                        
                         <div>
                             <h3>Sábado</h3>
                           
@@ -96,7 +102,7 @@
                         </div>
                     </article>
                     <article class="box-benefits">
-                        <figure><img class="icon-benefits" src="images/pierna-de-pollo.png" width="100" height="100"alt=""></figure>
+                       
                         <div>
                             <h3>Domingo</h3>
                      
@@ -105,6 +111,9 @@
                            
                         </div>
                     </article>
+                    <figure class="box-image-benefits">
+                        <img src="../Proyecto Final/images/imagen-15.png" alt="">
+                    </figure>
                 </div>
             </div>
             <figure class="box-image-benefits">
@@ -114,40 +123,40 @@
 
     <!-- Menú -->
     <body>
-    
+   
         <h1>Galería</h1>
         <span class="linea"></span>
-        <section class="galeria">
+        <section class="galeria" id="galeria">
         <a href="#image1">
-            <img src="images/viernes.jpg" alt="">
+            <img src="images/viernes.jpeg" alt="">
         </a>
         <a href="#image2">
-            <img src="images/viernes.jpg" alt="">
+            <img src="images/sabado.jpeg" alt="">
         </a>
         <a href="#image3">
-            <img src="images/viernes.jpg" alt="">
+            <img src="images/postre.jpeg" alt="">
         </a>
     </section>
 
     <article class="ligth-box" id="image1">
         <a href="#image3" class="next"><</a>
-        <img src="images/viernes.jpg" alt="">
+        <img src="images/viernes.jpeg" alt="">
         <a href="#image2" class="next">></a>
-        <a href="#" class="close">X</a>
+        <a href="#galeria" class="close">X</a>
     </article>
 
     <article class="ligth-box" id="image2">
         <a href="#image1" class="next"><</a>
-        <img src="images/viernes.jpg" alt="">
+        <img src="images/sabado.jpeg" alt="">
         <a href="#image3" class="next">></a>
-        <a href="#" class="close">X</a>
+        <a href="#galeria" class="close">X</a>
     </article>
 
     <article class="ligth-box" id="image3">
         <a href="#image2" class="next"><</a>
-        <img src="images/viernes.jpg" alt="">
+        <img src="images/postre.jpeg" alt="">
         <a href="#image1" class="next">></a>
-        <a href="#" class="close">X</a>
+        <a href="#galeria" class="close">X</a>
     </article>
 
 

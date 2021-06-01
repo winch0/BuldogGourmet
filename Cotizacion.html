@@ -11,33 +11,42 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <section class="section-page section-contact">
-        <h1 class="title-section">Cotizar</h1>
+        <h1 class="title-section">Haz tu pedido</h1>
         <form action="" class="form-landing-page" method="post">
             <div class="input-field">
-                <input class="input-form" type="text" name="name_contact" required autocomplete="on" placeholder="Ingresa tu nombre y apellido...">
+                <input class="input-form" type="text" id="name_contact"  autocomplete="on" placeholder="Ingresa tu nombre y apellido...">
+                <p id="msgNombre" class="alerta"></p>
             </div>
             <div class="input-field">
-                <input class="input-form" type="email" name="email_contact" required autocomplete="on" placeholder="Ingresa tu correo...">
+                <input class="input-form" type="email" id="email_contact"  autocomplete="on" placeholder="Ingresa tu correo...">
+                <p id="msgCorreo" class="alerta"></p>
             </div>
             <div class="input-field">
-                <input class="input-form" type="number" name="tel_contact" required autocomplete="on" placeholder="Ingresa tu teléfono...">
+                <input class="input-form" type="number" id="tel_contact" required autocomplete="on" placeholder="Ingresa tu teléfono...">
+                <p id="msgfono" class="alerta"></p>
             </div>
-            <div class="input-field">
-                <select class="select-form" required>
-                    <option value="html5">HTML5</option>
-                    <option value="css3">CSS3</option>
-                    <option value="javascript">Javascript</option>
-                    <option value="git">Git/Github</option>
+            <div class="input-field" >
+                <select class="select-form" required id="menu_contact">
+                    <option value="viernes">menú viernes</option>
+                    <option value="sábado">menú sábado</option>
+                    <option value="domingo">menú domingo</option>
                 </select>
+                <p id="msgMenu" class="alerta"></p>
             </div>
             <div class="input-field">
-                <textarea class="textarea-form" name="commit_contact" cols="30" rows="10" placeholder="Déjanos tu comentario..." minlength="10" maxlength="200"></textarea>
+                <textarea class="textarea-form" id = "pedido" cols="30" rows="10" required placeholder="Déjanos tu comentario y cantidad de menús" minlength="10" maxlength="200"></textarea>
+                <p id="msgpedido" class="alerta"></p>
             </div>
-            <button class="btns btn-enviar" type="submit" value="submit">Enviar y cotizar</button>
+            <button class="btns btn-enviar" type="button" value="submit" onclick="Validarinformacion()">Enviar</button>
         </form>
     </section>
+
+
+
+
 </body>
 </html>

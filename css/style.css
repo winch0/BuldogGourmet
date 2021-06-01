@@ -232,81 +232,7 @@ li{
         margin-top: 2rem;
     }
  }
-/* Section Servicios */
-
-.section-services .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    flex-wrap: wrap;
-}
-
-.section-services .container .box-services {
-    width: 30%;
-    
-}
-
-.section-services .container .box-services .box-image-services {
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    padding: 2rem;
-    width: 200px;
-    margin: auto;
-    margin-bottom: 25px;
-    transition: .4s all ease-in-out;
-    border: 1px rgb(255, 255, 255) solid;
-}
-
-.section-services .container .box-services .box-image-services:hover {
-    box-shadow: 0 20px 40px -20px #df644e;
-    border: 1px #ec5858 solid;
-}
-
-.section-services .container .box-services .box-image-services img {
-    max-width: 2000px;
-}
-
-.section-services .container .box-services .title-services {
-    margin-bottom: 1rem;
-}
-
-@media only screen and (max-width: 820px) {
-    .title-section {
-        font-size: 35px;
-    }
-    .section-services .container .box-services {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .section-services .container .box-services {
-        width: 100%;
-    }
-}
-
-
-/* Section menú */
-
-.title-section {
-    font-size: 45px;
-    margin-bottom: 3rem;
-    
-}
-
-.section-benefits {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-  
-    position: relative;
-}
-
+/* Section Sello */
 
 .section-services .container {
     display: flex;
@@ -336,18 +262,51 @@ li{
     border: 1px white solid;
 }
 
+
 .section-services .container .box-services .box-image-services:hover {
-    box-shadow: 0 20px 40px -20px rgba(78, 114, 223, 0.5);
-    border: 1px #4E73DF solid;
+    box-shadow: 0 20px 40px -20px #df644e;
+    border: 1px #ec5858 solid;
 }
 
 .section-services .container .box-services .box-image-services img {
-    max-width: 160px;
+    max-width: 2000px;
 }
 
 .section-services .container .box-services .title-services {
     margin-bottom: 1rem;
 }
+
+@media only screen and (max-width: 820px) {
+    .section-services .container .box-services {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section-services .container .box-services {
+        width: 100%;
+    }
+}
+
+
+/* Section menú */
+
+.title-section {
+    font-size: 45px;
+    margin-bottom: 3rem;
+    
+}
+
+.section-benefits {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+  
+    position: relative;
+}
+
+
+
 
 @media only screen and (max-width: 820px) {
     .section-benefits {
@@ -477,37 +436,12 @@ li{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CONTACTO SECTION */
 
 .section-contact {
-    background-image: url(../images/img-footer.svg);
+    background-image: url(../images/floki2.png);
     background-position-x: left;
-    background-position-y: 350px;
+    background-position-y: 300px;
     background-repeat: no-repeat;
 }
 
@@ -527,6 +461,9 @@ li{
     box-sizing: border-box;
     padding: 0 .75rem;
     min-height: 1px;
+}
+.alerta{
+    color:red;
 }
 
 
